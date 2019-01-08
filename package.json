@@ -1,22 +1,25 @@
 {
-  "name": "dyyyl",
+  "name": "connnor",
   "version": "1.0.0",
-  "description": "A personal card for Dyl Reynard (@dyyyl)",
+  "description": "A personal card for Connor Minielly",
   "main": "index.js",
   "bin": {
-    "dyyyl": "./bin/card.js"
+    "connnor": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dyyyl/dyyyl.git"
+    "url": "https://github.com/ConnorMinielly/connnor.git"
   },
-  "author": "Dyl Reynard",
+  "author": "Connor Minielly",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon bin/card.js"
+  },
   "dependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
+    "nodemon": "^1.18.9"
   }
 }

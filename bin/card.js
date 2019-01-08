@@ -9,21 +9,22 @@ const chalk = require('chalk');
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round',
+  borderStyle: 'double',
 };
+
+const teal = `hex("#7FFFD4")`;
+const snow = `hex("#FBFBFB")`;
 
 // You can also use tagged template literals with Chalk!
 const cardText = chalk`
-  {white Dyl Reynard /} {cyan @dyyyl}
+  {${teal} Connor Minielly}
 
-     {white.bold Work:} {white Wandering Web Engineer}
-      {white.bold NPM:} {cyan https://www.npmjs.com/~dyyyl}
-  {white.bold Twitter:} {cyan https://twitter.com/dyyyyyyyyyl}
-   {white.bold Github:} {cyan https://github.com/dyyyl}
- {white.bold LinkedIn:} {cyan https://www.linkedin.com/in/dyyyl/}
-      {white.bold Web:} {cyan https://dyyyl.rocks}
+     {${snow} Work:} {${snow} Bookshop Interactive co-Founder}
+      {${snow} NPM:} {${teal} https://www.npmjs.com/~connorminielly}
+   {${snow} Github:} {${teal} https://github.com/ConnorMinielly}
+ {${snow} LinkedIn:} {${teal} https://www.linkedin.com/in/connor-minielly-469b44102/}
+      {${snow} Web:} {${teal} https://bookshopinteractive.ca}
 
-    {white.bold Card:} {white npx dyyyl}`;
+    {${snow} Card:} {hex("#54428E") npx connor}`;
 
-// PaleVioletRed box 🚀
-console.log(chalk.hex('#db7093')(boxen(cardText, options)));
+console.log(chalk.hex('#54428E')(boxen(cardText, options)));

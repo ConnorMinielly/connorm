@@ -1,4 +1,4 @@
-It's me, Dyl!
+It's me, Connor!
 
 # Usage
 
