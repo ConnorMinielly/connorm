@@ -2,65 +2,29 @@
 // 👆 Used to tell Node.js that this is a CLI tool
 
 // Pull in our modules
-const boxen = require("boxen");
-const chalk = require("chalk");
+const boxen = require('boxen');
+const chalk = require('chalk');
 
 // Define options for Boxen
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: "round",
+  borderStyle: 'double',
 };
 
-// Text + chalk definitions
-const data = {
-  name: chalk.white("Dyl Reynard /"),
-  handle: chalk.cyan("@dyyyl"),
-  work: chalk.white("Wandering Web Engineer"),
-  npm: chalk.cyan("https://www.npmjs.com/~dyyyl"),
-  twitter: chalk.cyan("https://twitter.com/dyyyyyyyyyl"),
-  github: chalk.cyan("https://github.com/dyyyl"),
-  linkedin: chalk.cyan("https://www.linkedin.com/in/dyyyl/"),
-  web: chalk.cyan("https://dyyyl.rocks"),
-  npx: chalk.white("npx dyyyl"),
-  labelWork: chalk.white.bold("      Work:"),
-  labelNPM: chalk.white.bold("       NPM:"),
-  labelTwitter: chalk.white.bold("   Twitter:"),
-  labelGitHub: chalk.white.bold("    GitHub:"),
-  labelLinkedIn: chalk.white.bold("  LinkedIn:"),
-  labelWeb: chalk.white.bold("       Web:"),
-  labelCard: chalk.white.bold("      Card:"),
-};
+const teal = `hex("#7FFFD4")`;
+const snow = `hex("#FBFBFB")`;
 
-// Actual strings we're going to output
-const newline = "\n";
-const heading = `${data.name} ${data.handle}`;
-const working = `${data.labelWork}  ${data.work}`;
-const npming = `${data.labelNPM}  ${data.npm}`;
-const twittering = `${data.labelTwitter}  ${data.twitter}`;
-const githubing = `${data.labelGitHub}  ${data.github}`;
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
-const webing = `${data.labelWeb}  ${data.web}`;
-const carding = `${data.labelCard}  ${data.npx}`;
+// You can also use tagged template literals with Chalk!
+const cardText = chalk`
+  {${teal} Connor Minielly}
 
-// Put all our output together into a single variable so we can use boxen effectively
-const output =
-  heading +
-  newline +
-  newline +
-  working +
-  newline +
-  npming +
-  newline +
-  twittering +
-  newline +
-  githubing +
-  newline +
-  linkedining +
-  newline +
-  webing +
-  newline +
-  newline +
-  carding;
+     {${snow} Work:} {${snow} Bookshop Interactive co-Founder}
+      {${snow} NPM:} {${teal} https://www.npmjs.com/~connorminielly}
+   {${snow} Github:} {${teal} https://github.com/ConnorMinielly}
+ {${snow} LinkedIn:} {${teal} https://www.linkedin.com/in/connor-minielly-469b44102/}
+      {${snow} Web:} {${teal} https://bookshopinteractive.ca}
 
-console.log(chalk.green(boxen(output, options)));
+    {${snow} Card:} {hex("#54428E") npx connor}`;
+
+console.log(chalk.hex('#54428E')(boxen(cardText, options)));
