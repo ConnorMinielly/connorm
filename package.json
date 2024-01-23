@@ -1,15 +1,15 @@
 {
-  "name": "connnor",
-  "version": "2.0.0",
+  "name": "connorm",
+  "version": "2.0.1",
   "description": "A personal card for Connor Minielly",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "connnor": "bin/card.js"
+    "connorm": "bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConnorMinielly/connnor.git"
+    "url": "git+https://github.com/ConnorMinielly/connorm.git"
   },
   "author": "Connor Minielly",
   "license": "MIT",

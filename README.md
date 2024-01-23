@@ -5,5 +5,5 @@ It's me, Connor!
 Via npx:
 
 ```
-npx connnor
+npx connorm
 ```

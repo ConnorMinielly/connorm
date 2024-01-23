@@ -26,6 +26,6 @@ const cardText = chalkTemplate`{${teal} 🤠 Connor Minielly}
  {${snow} LinkedIn:} {${teal} https://www.linkedin.com/in/connor-minielly/}
       {${snow} Web:} {${teal} https://connor-minielly.com}
 
-     {${snow} Card:} {hex("#54428E") npx connnor}`;
+     {${snow} Card:} {hex("#54428E") npx connorm}`;
 
 console.log(chalk.hex("#54428E")(boxen(cardText, options)));
