@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "connnor": "./bin/card.js"
+    "connnor": "bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ConnorMinielly/connnor.git"
+    "url": "git+https://github.com/ConnorMinielly/connnor.git"
   },
   "author": "Connor Minielly",
   "license": "MIT",
