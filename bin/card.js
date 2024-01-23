@@ -19,12 +19,12 @@ const snow = `hex("#FBFBFB")`;
 const cardText = chalk`
   {${teal} Connor Minielly}
 
-     {${snow} Work:} {${snow} Bookshop Interactive co-Founder}
+     {${snow} Work:} {${snow} Full Stack Software Developer}
       {${snow} NPM:} {${teal} https://www.npmjs.com/~connorminielly}
    {${snow} Github:} {${teal} https://github.com/ConnorMinielly}
- {${snow} LinkedIn:} {${teal} https://www.linkedin.com/in/connor-minielly-469b44102/}
-      {${snow} Web:} {${teal} https://bookshopinteractive.ca}
+ {${snow} LinkedIn:} {${teal} https://www.linkedin.com/in/connor-minielly/}
+      {${snow} Web:} {${teal} https://connor-minielly.com}
 
-    {${snow} Card:} {hex("#54428E") npx connor}`;
+    {${snow} Card:} {hex("#54428E") npx connnor}`;
 
 console.log(chalk.hex('#54428E')(boxen(cardText, options)));
